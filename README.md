@@ -1,4 +1,4 @@
-# MicroService Sample Kafka
+# MicroService Sample ZooKeeper, Kafka, Docker, Kubernetes
  
 ## Merhaba
 
@@ -25,10 +25,9 @@ Kafka ise aldığı mesajları minimum 2 farklı sisteme dağıtacak. Bu iki sis
 
 
 - Aşağıdaki linkten Chocolatey paket yöneticisini yükleyin.
-   https://chocolatey.org/install
-
--  aşağıdaki linkten Chocolatey paket yöneticisini yükleyiniz. (Admin modunda powershell açıp çalıştırın)
-   `choco install -y skaffold`   
+- https://chocolatey.org/install
+- Aşağıdaki linkten Chocolatey paket yöneticisini yükleyiniz. (Admin modunda powershell açıp çalıştırın)
+- `choco install -y skaffold`   
 
 
 <div align="center">
@@ -57,7 +56,7 @@ Kafka ise aldığı mesajları minimum 2 farklı sisteme dağıtacak. Bu iki sis
   - Mesajları diğer servislerden toplayan ve kanallarda karşılayan tüm uygulamaların docker-compose dosyasına işlenmesi
   - docker-compose dosyası skaffold ile kubernetes yaml dosyasına çevirilmiştir.
     (Çevrilen dosyalar üzerinde ayrıca editleme işlemleri gerekmektedir. Fakat dosyaları kaybetmeniz halinde aşağıdaki komut ile tekrar oluşturabilirsiniz.)
-    `skaffold.exe init --compose-file docker-compose.yml`
+  - `skaffold.exe init --compose-file docker-compose.yml`
   - `KafkaStarter/start_docker.bat` dosyası ile kafka ve zookeeper servislerinin ayağa kaldırılabilirliği  
   - `skaffold run` komutu ile tüm sistemin ayağa kaldırılabilirliği
   - Projenin nasıl çalıştırılacağına dair README.md dokümantasyonu

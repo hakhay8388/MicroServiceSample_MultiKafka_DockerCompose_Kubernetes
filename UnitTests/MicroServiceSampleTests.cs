@@ -69,7 +69,7 @@ namespace UnitTests
         public void Test2_KafkaTest_Consumer()
         {
             KafkaTestString = "";
-            KafkaConnectorSender = new cKafkaConnector("127.0.0.1:9092", "topic");
+            KafkaConnectorSender = new cKafkaConnector("127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094", "topic");
             ///
             /// Þuanda ayaða kalkan kafka servisi ayný grup ID ile tek consumer üzerinden çalýþýyor.
             /// Birden fazla peþpeþe test sýrasýnda testler baþarýsýz çýktýðý için random bir grup oluþturuluyor.
@@ -83,7 +83,7 @@ namespace UnitTests
         [TestMethod]
         public void Test3_KafkaTest_ProduceAndControl()
         {
-            KafkaConnectorReceiever = new cKafkaConnector("127.0.0.1:9092", "topic");
+            KafkaConnectorReceiever = new cKafkaConnector("127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094", "topic");
             KafkaConnectorReceiever.Producer.Init();
             KafkaConnectorReceiever.Producer.Produce("KAFKA_TEST");
 
