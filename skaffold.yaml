@@ -1,0 +1,19 @@
+apiVersion: skaffold/v2beta29
+kind: Config
+metadata:
+  name: microservicesample-multikafka-dockercompose
+build:
+  artifacts:
+  - image: elasticsearchapp
+    context: .
+    docker:
+      dockerfile: ElasticSearchApp/Dockerfile
+  - image: postgresapp
+    context: .
+    docker:
+      dockerfile: PostgresApp/Dockerfile
+deploy:
+  kubectl:
+    manifests:
+    - elasticsearchapp-deployment.yaml
+    - postgresapp-deployment.yaml

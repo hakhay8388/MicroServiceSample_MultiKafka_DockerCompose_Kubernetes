@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  elasticsearchapp:
+    image: ${DOCKER_REGISTRY-}elasticsearchapp
+    build:
+      context: .
+      dockerfile: ElasticSearchApp/Dockerfile
+    deploy:
+      mode: replicated
+      replicas: 3
+      
+  postgresapp:
+    image: ${DOCKER_REGISTRY-}postgresapp
+    build:
+      context: .
+      dockerfile: PostgresApp/Dockerfile
+    deploy:
+      mode: replicated
+      replicas: 3
+      
+  
+

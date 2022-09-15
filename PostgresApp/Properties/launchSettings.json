@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "PostgresApp": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

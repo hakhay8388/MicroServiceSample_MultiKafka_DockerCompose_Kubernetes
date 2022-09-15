@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "4dFGFVFHFCgdjrr3UW4ehpGXLXeepx5QxRjxJ/X3dIJOZHvg79XabOWXKJ2KJgWgPVHD1LN9D0AMFIDefOXuqg==",
+  "success": true,
+  "projectFilePath": "H:\\VirtualStyle_Projects\\MicroServiceSample_MultiKafka_DockerCompose\\ElasticSearchApp\\ElasticSearchApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\VirtualStyle\\.nuget\\packages\\confluent.kafka\\1.9.2\\confluent.kafka.1.9.2.nupkg.sha512",
+    "C:\\Users\\VirtualStyle\\.nuget\\packages\\librdkafka.redist\\1.9.2\\librdkafka.redist.1.9.2.nupkg.sha512",
+    "C:\\Users\\VirtualStyle\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512",
+    "C:\\Users\\VirtualStyle\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\VirtualStyle\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

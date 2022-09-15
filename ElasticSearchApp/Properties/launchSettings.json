@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ElasticSearchApp": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
