@@ -20,7 +20,8 @@ namespace MicroServiceSample.nWebGraph
             :base()
         {
             ValidatorManager = new cValidatorManager();
-            KafkaConnector = new cKafkaConnector("127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094", "topic");
+            //KafkaConnector = new cKafkaConnector("127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094", "topic");
+            KafkaConnector = new cKafkaConnector("host.docker.internal:29092,host.docker.internal:29093,host.docker.internal:29094", "topic");
             //KafkaConnector = new cKafkaConnector("host.docker.internal:29092", "topic");
             KafkaConnector.Producer.Init();
         }

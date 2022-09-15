@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/name: microservicesample
+  name: microservicesample
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: microservicesample
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: microservicesample
+    spec:
+      containers:
+        - image: microservicesample
+          name: microservicesample
+          ports:
+            - containerPort: 80
+          resources: {}
+      restartPolicy: Always
+status: {}

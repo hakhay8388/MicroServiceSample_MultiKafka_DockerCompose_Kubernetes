@@ -19,5 +19,14 @@ services:
       mode: replicated
       replicas: 3
       
-  
+  microservicesample:
+    image: ${DOCKER_REGISTRY-}microservicesample
+    build:
+      context: .
+      dockerfile: MicroServiceSample/Dockerfile
+    deploy:
+      mode: replicated
+      replicas: 3
+    ports:
+      - "80:80"  
 

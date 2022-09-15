@@ -8,6 +8,10 @@ build:
     context: .
     docker:
       dockerfile: ElasticSearchApp/Dockerfile
+  - image: microservicesample
+    context: .
+    docker:
+      dockerfile: MicroServiceSample/Dockerfile
   - image: postgresapp
     context: .
     docker:
@@ -16,4 +20,6 @@ deploy:
   kubectl:
     manifests:
     - elasticsearchapp-deployment.yaml
+    - microservicesample-deployment.yaml
+    - microservicesample-service.yaml
     - postgresapp-deployment.yaml

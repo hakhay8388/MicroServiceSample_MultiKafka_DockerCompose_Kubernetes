@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "PJ+WYnnfOmFI2OuGRBFFPS5gB5Qqy2H8ydSlDjNp3ng=",
+  "Source": "MicroServiceSample",
+  "BasePath": "_content/MicroServiceSample",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

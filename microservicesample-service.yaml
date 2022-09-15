@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app.kubernetes.io/name: microservicesample
+  name: microservicesample
+spec:
+  type: NodePort
+  ports:
+    - name: "80"
+      port: 80
+      targetPort: 80
+      nodePort: 30000
+  selector:
+    app.kubernetes.io/name: microservicesample
+status:
+  loadBalancer: {}
