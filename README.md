@@ -189,6 +189,9 @@ Alanlar:
 
 - Yukarıdaki bahsi geçen postman ile ilgili JSON'ı  https://host.docker.internal:30000/WebApi/WebApi adresini çağırdığınızda ilgili verileri Kafka üzerinden ilgili uygulamalara iletmiş olduğunu göreceksiniz. :)
 
+## Kubernete kullanmadan WEB uygulamasını Docker içine almadan projeyi ayağa kaldırmak isterseniz aşağıdaki kodu çalıştırıabilirsiniz.
+
+- `docker-compose -f docker-compose_without_kubernetes.yml up`  
 
 ## Sorularınız
 
